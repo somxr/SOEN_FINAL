@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7f89d7d-e6cc-47ee-bb6a-7d469f29a418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/survey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/q1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/q1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/q2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/q2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/q3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/q3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/q4.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/q4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/exam.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exam.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exam.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -32,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -83,7 +86,8 @@
       <workItem from="1587497911987" duration="184000" />
       <workItem from="1587509517300" duration="283000" />
       <workItem from="1587563421026" duration="676000" />
-      <workItem from="1587590508851" duration="19637000" />
+      <workItem from="1587590508851" duration="20214000" />
+      <workItem from="1587649567110" duration="6824000" />
     </task>
     <servers />
   </component>
@@ -91,44 +95,44 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="274" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587598969017">
+    <state x="153" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587649603798">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="274" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587598969017" />
+    <state x="153" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587649603798" />
     <state x="-1506" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587498062509" />
     <state x="491" y="153" key="FileChooserDialogImpl" timestamp="1587599226498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="491" y="153" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587599226498" />
     <state x="-1230" y="88" key="FileChooserDialogImpl/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587498092461" />
-    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1587613494067">
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1587656747452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587613494067" />
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587656747452" />
     <state width="1865" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587497577694" />
-    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1587613494067">
+    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1587656747452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587613494067" />
+    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587656747452" />
     <state width="1865" height="268" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587497577693" />
-    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1587613494067">
+    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1587656747452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587613494067" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587656747452" />
     <state width="1865" height="268" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587497577693" />
-    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1587613494067">
+    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1587656747452">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587613494067" />
+    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587656747452" />
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587497577694" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1587593131664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587593131664" />
-    <state x="262" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1587590513394">
+    <state x="262" y="270" key="com.intellij.ide.util.TipDialog" timestamp="1587649587497">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="262" y="270" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587590513394" />
+    <state x="262" y="270" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587649587497" />
     <state x="-1329" y="172" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.-130.1920.1040@-1920.-130.1920.1040" timestamp="1587497926252" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587598788481">
       <screen x="0" y="0" width="1366" height="728" />
@@ -140,6 +144,6 @@
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587608895321" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/soen287_S_w2020_final$soen287_S_w2020_final.coverage" NAME="soen287_S_w2020_final Coverage Results" MODIFIED="1587613494059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/soen287_S_w2020_final$soen287_S_w2020_final.coverage" NAME="soen287_S_w2020_final Coverage Results" MODIFIED="1587656747441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

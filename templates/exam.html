@@ -13,8 +13,13 @@
 <body>
 <h1>SOEN287 Take-Home Final Exam</h1>
 
+{% if prev_link %}
 <a href={{ prev_link }}>Previous Question</a>
+{% endif %}
+
+{% if next_link %}
 <a href={{ next_link }}>Next Question</a>
+{% endif %}
 
 
 <ul class="nav">

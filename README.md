@@ -4,16 +4,16 @@
 # Write your name and ID here
 
 ## First Name
-John
+Somar
 
 ## Last Name
-Doe
+Jaafar
 
 ## Student ID
-12345678
+40152665
 
 ## Email
-aaa@example.com
+somar.jaafar19@gmail.com
 
 
 ## Indicate which of question 3 or question 4 you want to be graded (replace X by 3 or 4)
