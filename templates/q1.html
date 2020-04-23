@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Question 1</title>
-</head>
-<body>
+{% extends "exam.html" %}
+
+{% block title %}Q1{% endblock %}
+
+{% block content %}
+
 <h1>Question 1</h1>
 <ul>
     <li>This question is about HTML, CSS, and Jinja2 template inheritance.</li>
@@ -79,5 +78,5 @@
         base template, not directly to each question page.
     </li>
 </ol>
-</body>
-</html>
+
+{% endblock %}

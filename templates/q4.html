@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Question 4</title>
+{% extends "exam.html" %}
+
+{% block title %}Q4{% endblock %}
+{% block head %}
     <style>
         table, td, th {
             border-style: solid;
@@ -10,8 +9,9 @@
             border-collapse: collapse;
         }
     </style>
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
 <h1>Question 4</h1>
 <a href="/codes">Postal Codes</a>
 <ul>
@@ -112,5 +112,5 @@
     </tbody>
 </table>
 </table>
-</body>
-</html>
+
+{% endblock %}
