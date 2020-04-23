@@ -1,3 +1,56 @@
 body {
-    background-color: pink;
+  font-family: monospace;
+  color: dimgray;
 }
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #932439;
+  height: 100%;
+  overflow: auto;
+    float: right;
+   border-radius: 25px;
+  border-color: #ffef74;
+  border-width: 2px;
+  border-style:solid;
+}
+
+li a {
+  display: block;
+  color: #ffef74;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: Courier;
+ font-size: 120%;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+li a img {
+  width: 10%;
+  height: 10%;
+}
+
+code {
+  color:greenyellow;
+}
+
+em {
+  color: green;
+}
+
+strong {
+  color: black;
+}
+

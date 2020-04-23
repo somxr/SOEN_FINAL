@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>SOEN287-S Take-Home Final Exam</title>
-    <link rel="stylesheet" type="text/css" href="\static\exam.css"></head>
+
+        <meta charset="UTF-8">
+        <title>{% block title %}SOEN287-S Take-Home Final Exam{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="\static\exam.css">
+        {% block head %}
+        {% endblock %}
+ </head>
 
 <body>
-
 <h1>SOEN287 Take-Home Final Exam</h1>
 
-<ul>
-    <li><a href="q1.html">Question 1</a></li>
-    <li><a href="q2.html">Question 2</a></li>
-    <li><a href="q3.html">Question 3</a></li>
-    <li><a href="q4.html">Question 4</a></li>
+<a href={{ prev_link }}>Previous Question</a>
+<a href={{ next_link }}>Next Question</a>
+
+
+<ul class="nav">
+    <li><a href="/"><img src="/static/sonic_icon.png"></a></li>
+    <li><a href="/q1">Question 1</a></li>
+    <li><a href="/q2">Question 2</a></li>
+    <li><a href="/q3">Question 3</a></li>
+    <li><a href="/q4">Question 4</a></li>
+
 </ul>
+
+<div>
+    {% block content %}
+        <dl>
+        <dt>Name</dt>
+        <dd>Somar Jaafar</dd>
+        <dt>ID</dt>
+        <dd>40152665</dd>
+        <dt>Email</dt>
+        <dd>somar.jaafar19@gmail.com</dd>
+        <dt>Website Title</dt>
+        <dd>Music Blog</dd>
+        <dt>Description</dt>
+        <dd>I built a music blog where users can see lists of the best music over various years, get detailed explanations of obscure genres and recomendations of the best music in them, and discover new up and coming artists. User log ins are supported and spotify integration is included where I can feature any album or playlist on the main page.</dd>
+        </dl>
+    {% endblock %}
+</div>
+
+
 
 </body>
 </html>
