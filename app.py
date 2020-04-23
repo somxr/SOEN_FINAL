@@ -1,9 +1,10 @@
 # SOEN287 Web Programming Take-Home Final Exam
 # Winter 2020
+import csv
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flask_wtf import FlaskForm
-from wtforms import SelectMultipleField, RadioField, SubmitField
+from wtforms import SelectMultipleField, RadioField, SubmitField, BooleanField
 from wtforms.fields.html5 import EmailField
 from wtforms.validators import InputRequired, Email
 from wtforms.widgets import ListWidget, CheckboxInput
@@ -22,15 +23,15 @@ class MultiCheckboxField(SelectMultipleField):
 
 class SurveyForm(FlaskForm):
     email = EmailField('Email', validators=[InputRequired(), Email()])
-    checkbox_group = MultiCheckboxField('Checkbox', choices=[('c1', 'Checkbox 1')])
-    fav_color = ColorField('Favorite Color',
+    checkbox = BooleanField('Show e-mail?', default=False)
+    color = ColorField('Favorite Color',
                            validators=[InputRequired()])
-    radio_group = RadioField('Radio button group',
+    radio_group = RadioField('What is your favorite letter?',
                              validators=[InputRequired()],
-                             choices=[('r1', 'Radio button 1'),
-                                      ('r2', 'Radio button 2'),
-                                      ('r3', 'Radio button 3'),
-                                      ('r4', 'Radio button 4')],
+                             choices=[('a', 'a'),
+                                      ('b', 'b'),
+                                      ('c', 'c'),
+                                      ('d', 'd')],
                              render_kw={'required': True})
     submit = SubmitField('Submit')
 # end of your survey FlaskForm
@@ -68,9 +69,18 @@ def q4():
 def survey():
     form = SurveyForm()
     if form.validate_on_submit():
-        
-        return render_template('survey.html', form=request.form,
-                               checkboxes=request.form.getlist('checkbox_group'))
+        with open('data/info.csv', 'w') as f:
+            writer = csv.writer(f)
+            try:
+                n = request.form['checkbox']
+                writer.writerow([request.form['email'],
+                                 request.form['color'],
+                                 request.form['radio_group']])
+            except:
+                writer.writerow([request.form['color'],
+                                 request.form['radio_group']])
+
+        return redirect('/survey/results')
     return render_template('survey.html', form=form)
 # end of your survey endpoint
 
