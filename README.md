@@ -17,7 +17,7 @@ somar.jaafar19@gmail.com
 
 
 ## Indicate which of question 3 or question 4 you want to be graded (replace X by 3 or 4)
-I want question X to be graded
+I want question 4 to be graded
 
 
 # Exam Rules

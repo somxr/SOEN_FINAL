@@ -54,3 +54,13 @@ strong {
   color: black;
 }
 
+.error {
+            background-color: yellow;
+            color: red;
+            border-style: groove;
+            border-color: red;
+}
+
+.error_big {
+    font-size: xx-large;
+}

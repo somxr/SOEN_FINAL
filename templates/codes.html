@@ -1,0 +1,27 @@
+{% extends 'exam.html' %}
+
+{% block title %}Code{% endblock %}
+
+{% block head %}<script src="/static/codes.js"></script>{% endblock %}
+
+{% block content %}
+    <p>
+            Select one from the five countries:
+            <select id="select1" onchange="updateCountry()">
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Thailand">Thailand</option>
+                <option value="UK">United Kingdom</option>
+            </select>
+    </p>
+
+    <a href="https://www.google.ca/maps/place/Brazil/@-13.6561589,-69.7309264,4z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528" id="link"><img src="https://img.theculturetrip.com/768x432/wp-content/uploads/2017/06/brazili-flaf.png" id="image" height="100" width="150"></a>
+
+    <p>The acceptable postal code format(s) for this country:</p>
+    <p id="postal">NNNNNNNN</p>
+
+    <p>Enter Postal Code: <input type="text" id="code" name="Postal Code" onblur="validate_code()"></p>
+
+
+{% endblock %}

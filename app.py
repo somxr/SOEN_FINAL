@@ -93,7 +93,9 @@ def survey():
 
 # TODO: Question 4: JavaScript and regular expressions
 # Write your postal codes endpoint starting on the next line
-
+@app.route('/codes')
+def codes():
+    return render_template('codes.html')
 # end of your postal codes endpoint
 
 
